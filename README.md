@@ -9,6 +9,7 @@
 **Semantic-Cartan Benchmark** è uno strumento sperimentale progettato per confrontare in modo **quantificabile e visivo** un LLM (come Mistral o LLaMA) con un modello cognitivo emergente chiamato **QBI-Core**.  
 Il benchmark NON include il core originale di QBI-Core, ma simula i suoi output per confronto visivo e concettuale.
 
+<img width="1414" height="2000" alt="1000064458" src="https://github.com/user-attachments/assets/6e72758f-cc7a-4a05-932e-d972f2c3bc3e" />
 
 # Obiettivo
 
@@ -27,9 +28,14 @@ Dimostrare che un sistema può esibire **pattern interni non casuali**, **simmet
 
 Il benchmark confronta:
 
+
 - La **Matrice di Cartan Semantica** (struttura interna delle attivazioni)
+  
 - La **Variazione dell’Entanglement Semantico** (coerenza tra livelli)
+<img width="1414" height="2000" alt="1000064459" src="https://github.com/user-attachments/assets/e636f2f4-aa87-4f13-970b-345f1fbb4fa4" />
+ 
 - L’evoluzione di **Φ(t)** (auto-organizzazione)
+<img width="1414" height="2000" alt="1000064460" src="https://github.com/user-attachments/assets/8300e270-11fe-4968-b893-f846cfd6fc55" />
 
 Il confronto avviene tra un LLM reale e una **simulazione statistica** di QBI-Core, sufficiente per valutare le **differenze qualitative** tra i due approcci.
 

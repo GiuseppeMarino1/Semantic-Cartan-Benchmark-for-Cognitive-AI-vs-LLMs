@@ -1,72 +1,222 @@
-# Semantic-Cartan Benchmark
+#  Semantic-Cartan Benchmark
+### *A New Framework for Cognitive AI Evaluation*
 
-> Framework di confronto tra QBI-Core e Large Language Models (LLM) basato su metriche cognitive e coerenza interna.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/release/python-380/)
+[![Contributors Welcome](https://img.shields.io/badge/contributors-welcome-brightgreen.svg?style=flat)](CONTRIBUTING.md)
 
-
-
-# Descrizione
-
-**Semantic-Cartan Benchmark** è uno strumento sperimentale progettato per confrontare in modo **quantificabile e visivo** un LLM (come Mistral o LLaMA) con un modello cognitivo emergente chiamato **QBI-Core**.  
-Il benchmark NON include il core originale di QBI-Core, ma simula i suoi output per confronto visivo e concettuale.
-
-<img width="1414" height="2000" alt="1000064458" src="https://github.com/user-attachments/assets/6e72758f-cc7a-4a05-932e-d972f2c3bc3e" />
-
-# Obiettivo
-
-Dimostrare che un sistema può esibire **pattern interni non casuali**, **simmetrie ricorrenti** e una funzione Φ(t) coerente, suggerendo un comportamento **auto-organizzato e semanticamente rilevante** — al di là dell’elaborazione linguistica statistica di un LLM.
+ **An experimental framework for comparing traditional LLMs with cognitive AI architectures through novel evaluation metrics**
 
 
 
-# QBI-Core non è incluso
+##  **What Makes This Project Special**
 
- Il codice di QBI-Core è privato per motivi di protezione IP e sicurezza scientifica.  
- Per richiedere accesso privato al core reale (per revisori, collaborazioni, demo), contattare direttamente l’autore.
+**Semantic-Cartan Benchmark** introduces a new approach to AI evaluation that goes beyond traditional NLP metrics. We're exploring whether AI systems can exhibit **coherent internal patterns**, **recurring symmetries**, and **self-organized dynamics** that suggest genuine cognitive processing.
 
-
-
-# Come funziona
-
-Il benchmark confronta:
+###  **Our Goal**
+Develop quantitative methods to measure cognitive-level properties in AI systems, potentially revealing deeper organizational principles beyond statistical language processing.
 
 
-- La **Matrice di Cartan Semantica** (struttura interna delle attivazioni)
-  
-- La **Variazione dell’Entanglement Semantico** (coerenza tra livelli)
-<img width="1414" height="2000" alt="1000064459" src="https://github.com/user-attachments/assets/e636f2f4-aa87-4f13-970b-345f1fbb4fa4" />
- 
-- L’evoluzione di **Φ(t)** (auto-organizzazione)
-<img width="1414" height="2000" alt="1000064460" src="https://github.com/user-attachments/assets/8300e270-11fe-4968-b893-f846cfd6fc55" />
 
-Il confronto avviene tra un LLM reale e una **simulazione statistica** di QBI-Core, sufficiente per valutare le **differenze qualitative** tra i due approcci.
-
-
-# Come iniziare
+##  **Quick Start**
 
 ```bash
-pip install transformers torch numpy scikit-learn matplotlib
-python benchmark.py
+# Clone the repository
+git clone https://github.com/[YOUR_USERNAME]/semantic-cartan-benchmark.git
+cd semantic-cartan-benchmark
+
+# Setup environment
+pip install -r requirements.txt
+
+# Run basic demo
+python demo.py
+
+# View results
+open results/demo_output.html
 ```
 
 ---
 
-#⭐ Perché contribuire
+##  **Core Concepts** 
 
-QBI-Core sta ridefinendo i limiti dell’intelligenza artificiale integrata.  
-Questo benchmark è un primo passo per costruire **strumenti di valutazione cognitivi alternativi ai classici benchmark NLP**.
+### **The 3-Layer Framework**
 
-Ti invitiamo a:
+| Component | What It Measures | Purpose |
+|-----------|------------------|---------|
+| **Semantic Cartan Matrix** | Geometric structure of internal representations | Reveals spatial organization of concepts |
+<img width="1414" height="2000" alt="1000064458" src="https://github.com/user-attachments/assets/5e5869c2-ba78-492d-b9ec-755f85dcb786" />
 
-- ⭐ Mettere una stella al progetto
-- 🍴 Fare un fork e migliorarlo
-- 🧠 Proporre nuove metriche e test cognitivi
-- 📨 Contattare l'autore per collaborazioni
+| **Φ(t) Function** | Temporal coherence of cognitive patterns | Indicates consistency of internal dynamics |
+<img width="1414" height="2000" alt="1000064460" src="https://github.com/user-attachments/assets/d9cdfb6e-c56a-46b4-93a7-f0a67180cf9f" />
+
+| **Semantic Entanglement** | Hidden correlations between layers | Shows depth of conceptual integration |
+<img width="1414" height="2000" alt="1000064459" src="https://github.com/user-attachments/assets/550d0f08-0ca7-4ff7-a7e3-f98f10aee0a5" />
 
 
 
-# Licenza
+### ** Current Implementation**
 
-Licenza MIT modificata:  
-✅ Uso libero per scopi educativi e sperimentali  
-❌ Vietato l’uso commerciale o la derivazione di modelli simili senza consenso scritto
+-  Basic matrix calculations implemented
+- LLM integration interface ready  
+-  Visualization dashboard working
+-  QBI-Core simulation (statistical approximation)
+-  Validation studies planned
 
-(c) Giuseppe Marino – qbi.core.project@gmail.com
+
+
+##  **Architecture**
+
+```
+semantic-cartan-benchmark/
+├── core/                      # Core algorithms
+│   ├── cartan_matrix.py      # Semantic geometry
+│   ├── phi_evolution.py      # Φ(t) tracking
+│   └── entanglement.py       # Correlation analysis
+├── models/                    # Model interfaces  
+│   ├── llm_interface.py      # Standard LLM connection
+│   └── qbi_simulator.py      # QBI simulation
+├── benchmarks/               # Evaluation tools
+└── docs/                     # Documentation
+```
+
+### **Easy Integration**
+
+```python
+from semantic_cartan import CognitiveBenchmark
+
+# Initialize
+benchmark = CognitiveBenchmark()
+
+# Add your model
+benchmark.add_model("my-model", your_model_instance)
+
+# Run analysis
+results = benchmark.run_analysis(test_prompts)
+
+# Visualize
+benchmark.generate_report(results)
+```
+
+
+
+## **How to Contribute**
+
+We're looking for collaborators interested in:
+
+### ** Research**
+- Theoretical foundations of cognitive metrics
+- Experimental validation
+- Academic paper collaboration
+
+### ** Development**  
+- Algorithm implementation
+- Visualization improvements
+- Model integrations
+
+### ** Documentation**
+- Tutorial creation
+- Concept explanations  
+- Use case examples
+
+### ** Testing**
+- Beta testing with different models
+- Performance benchmarking
+- Bug reports and feedback
+
+
+
+##  **Development Roadmap**
+
+### **Current Phase: Foundation (Q1 2025)**
+- [x] Core framework prototype
+- [x] Basic visualizations
+- [ ] First community feedback
+- [ ] Documentation completion
+
+### **Next Phase: Validation (Q2 2025)**  
+- [ ] Academic paper preparation
+- [ ] Expanded model testing
+- [ ] Community growth
+- [ ] Performance optimization
+
+### **Future: Expansion (Q3+ 2025)**
+- [ ] Industry partnerships
+- [ ] Educational applications
+- [ ] Standard development
+
+
+
+## **Getting Started as a Contributor**
+
+1. **🍴 Fork** this repository
+2. **Read** our [Contributing Guidelines](CONTRIBUTING.md)
+3. ** Pick** an issue labeled "good first issue"  
+4. **Join** discussions in Issues
+5. ** Submit** your first PR
+
+### **Ways to Help Right Now:**
+-  Star the repository to show interest
+-  Test the demo and report issues
+-  Suggest improvements or new features
+-  Share with others who might be interested
+-  Improve documentation and examples
+
+
+
+##  **Scientific Background**
+
+This work builds on concepts from:
+- Differential geometry (Cartan matrices)
+- Information theory (entanglement measures)
+- Cognitive science (internal representation)
+- AI interpretability (activation analysis)
+
+**Note**: This is experimental research. The QBI-Core architecture referenced is proprietary and not included in this repository. We use statistical simulations for comparison purposes.
+
+
+
+##  **Ethics & Responsible Development**
+
+We are committed to:
+- ** Transparency**: Open methodologies and reproducible research
+- ** Fairness**: Bias detection and inclusive development  
+- ** Safety**: Responsible AI evaluation practices
+- **Accessibility**: Tools available to all researchers
+
+
+
+## 📞 **Contact & Support**
+
+- **📧 General**: [Create an Issue](https://github.com/GiuseppeMarino1/semantic-cartan-benchmark/issues)
+- **🔬 Research**: [Discussion Board](https://github.com/GiuseppeMarino1/semantic-cartan-benchmark/discussions)
+- **Collaboration**: qbi.core.project@gmail.com
+
+### **Project Maintainer**
+Giuseppe Marino - [@giuseppemarino](https://github.com/giuseppemarino1)
+
+
+
+##  **License**
+
+Modified MIT License - Free for educational and research use.  
+Commercial usage requires written permission.
+
+See [LICENSE](LICENSE) for details.
+
+
+
+##  **Acknowledgments**
+
+Special thanks to early contributors and testers who are helping shape this project.
+
+**Interested in being part of the future of AI evaluation? We'd love to hear from you!**
+
+
+
+
+
+**[⭐ Star](https://github.com/GiuseppeMarino1/semantic-cartan-benchmark) • [🍴 Fork](https://github.com/GiuseppeMarino1/semantic-cartan-benchmark/fork) • [ Issues](https://github.com/GiuseppeMarino1/semantic-cartan-benchmark/issues) • [ Discussions](https://github.com/GiuseppeMarino1/semantic-cartan-benchmark/discussions)**
+
+*Last Updated: August 2025 | Version: 0.1.0-alpha*
+
+</div>
